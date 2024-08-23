@@ -1,46 +1,4 @@
-﻿/*
- *  ARControllerEditor.cs
- *  ARToolKit for Unity
- *
- *  This file is part of ARToolKit for Unity.
- *
- *  ARToolKit for Unity is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU Lesser General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  ARToolKit for Unity is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU Lesser General Public License for more details.
- *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with ARToolKit for Unity.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  As a special exception, the copyright holders of this library give you
- *  permission to link this library with independent modules to produce an
- *  executable, regardless of the license terms of these independent modules, and to
- *  copy and distribute the resulting executable under terms of your choice,
- *  provided that you also meet, for each linked independent module, the terms and
- *  conditions of the license of that module. An independent module is a module
- *  which is neither derived from nor based on this library. If you modify this
- *  library, you may extend this exception to your version of the library, but you
- *  are not obligated to do so. If you do not wish to do so, delete this exception
- *  statement from your version.
- *
- *  Copyright 2015 Daqri, LLC.
- *  Copyright 2010-2015 ARToolworks, Inc.
- *
- *  Author(s): Philip Lamb, Julian Looser
- *
- */
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEditor;
 
 [CustomEditor(typeof(ARController))]
 public class ARControllerEditor : Editor
@@ -116,21 +74,17 @@ public class ARControllerEditor : Editor
         showThresholdOptions = EditorGUILayout.Foldout(showThresholdOptions, "Threshold Options");
         if (showThresholdOptions)
         {
-            // Threshold mode selection
             ARController.ARToolKitThresholdMode currentThreshMode = arcontroller.VideoThresholdMode;
             ARController.ARToolKitThresholdMode newThreshMode = (ARController.ARToolKitThresholdMode)EditorGUILayout.EnumPopup("Mode:", currentThreshMode);
             if (newThreshMode != currentThreshMode) {
                 arcontroller.VideoThresholdMode = newThreshMode;
             }
 
-            // Info about the selected mode
             EditorGUILayout.LabelField("", ARController.ThresholdModeDescriptions[newThreshMode]);
 
-            // Show threshold slider only in manual mode
             if (newThreshMode == ARController.ARToolKitThresholdMode.Manual) {
 
                 int currentThreshold = arcontroller.VideoThreshold;
-                //int newThreshold = UnityEngine.Mathf.Clamp(EditorGUILayout.IntField("Threshold: ", currentThreshold), 0, 255);
                 int newThreshold = EditorGUILayout.IntSlider("Threshold: ", currentThreshold, 0, 255);
                 if (newThreshold != currentThreshold) {
                     arcontroller.VideoThreshold = newThreshold;
@@ -155,28 +109,24 @@ public class ARControllerEditor : Editor
 				arcontroller.TemplateCountMax = newTemplateCountMax;
 			}
 
-			// Labeling mode selection.
             ARController.ARToolKitLabelingMode currentLabelingMode = arcontroller.LabelingMode;
             ARController.ARToolKitLabelingMode newLabelingMode = (ARController.ARToolKitLabelingMode)EditorGUILayout.EnumPopup("Marker borders:", currentLabelingMode);
             if (newLabelingMode != currentLabelingMode) {
                 arcontroller.LabelingMode = newLabelingMode;
             }
 			
-			// Border size selection.
             float currentBorderSize = arcontroller.BorderSize;
             float newBorderSize = UnityEngine.Mathf.Clamp(EditorGUILayout.FloatField("Border size:", currentBorderSize), 0.0f, 0.5f);
             if (newBorderSize != currentBorderSize) {
                 arcontroller.BorderSize = newBorderSize;
             }
 			
-             // Pattern detection mode selection.
             ARController.ARToolKitPatternDetectionMode currentPatternDetectionMode = arcontroller.PatternDetectionMode;
             ARController.ARToolKitPatternDetectionMode newPatternDetectionMode = (ARController.ARToolKitPatternDetectionMode)EditorGUILayout.EnumPopup("Pattern detection mode:", currentPatternDetectionMode);
             if (newPatternDetectionMode != currentPatternDetectionMode) {
                 arcontroller.PatternDetectionMode = newPatternDetectionMode;
             }
  
-			// Matrix code type selection (only when in one of the matrix modes).
 			if (newPatternDetectionMode == ARController.ARToolKitPatternDetectionMode.AR_MATRIX_CODE_DETECTION
 				|| newPatternDetectionMode == ARController.ARToolKitPatternDetectionMode.AR_TEMPLATE_MATCHING_COLOR_AND_MATRIX
 				|| newPatternDetectionMode == ARController.ARToolKitPatternDetectionMode.AR_TEMPLATE_MATCHING_MONO_AND_MATRIX) {
@@ -188,7 +138,6 @@ public class ARControllerEditor : Editor
             	}
 			}
 
-		    // Image processing mode selection.
             ARController.ARToolKitImageProcMode currentImageProcMode = arcontroller.ImageProcMode;
             ARController.ARToolKitImageProcMode newImageProcMode = (ARController.ARToolKitImageProcMode)EditorGUILayout.EnumPopup("Image processing mode:", currentImageProcMode);
             if (newImageProcMode != currentImageProcMode) {

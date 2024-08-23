@@ -1,44 +1,5 @@
-﻿/*
- *  ARTrackedObjectGizmo.cs
- *  ARToolKit for Unity
- *
- *  This file is part of ARToolKit for Unity.
- *
- *  ARToolKit for Unity is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU Lesser General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  ARToolKit for Unity is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU Lesser General Public License for more details.
- *
- *  You should have received a copy of the GNU Lesser General Public License
- *  along with ARToolKit for Unity.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  As a special exception, the copyright holders of this library give you
- *  permission to link this library with independent modules to produce an
- *  executable, regardless of the license terms of these independent modules, and to
- *  copy and distribute the resulting executable under terms of your choice,
- *  provided that you also meet, for each linked independent module, the terms and
- *  conditions of the license of that module. An independent module is a module
- *  which is neither derived from nor based on this library. If you modify this
- *  library, you may extend this exception to your version of the library, but you
- *  are not obligated to do so. If you do not wish to do so, delete this exception
- *  statement from your version.
- *
- *  Copyright 2015 Daqri, LLC.
- *  Copyright 2010-2015 ARToolworks, Inc.
- *
- *  Author(s): Julian Looser, Philip Lamb
- *
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEditor;
 using UnityEngine;
 
@@ -50,8 +11,7 @@ class ARTrackedObjectGizmo
     private static Color MarkerEdgeUnselected = new Color(0.75f, 0.75f, 0.75f, 0.5f);
 
 
-    //[DrawGizmo(GizmoType.SelectedOrChild)]
-	[DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)] // Draw the gizmo if it is not selected and also no parent/ancestor object is selected. The gizmo can be picked in the editor. First argument of method is the type for which the Gizmo will be drawn.
+	[DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]                                      
     static void RenderARTrackedObjectGizmo(ARTrackedObject to, GizmoType gizmoType)
     {
         DrawMarker(to, (gizmoType & GizmoType.Active) != 0);
@@ -61,17 +21,13 @@ class ARTrackedObjectGizmo
 	{
         ARMarker m = to.GetMarker();
         if (m == null) return;
-		if (!m.gameObject.activeInHierarchy) return; // Don't attempt to load inactive ARMarkers.
+		if (!m.gameObject.activeInHierarchy) return;       
 		
-		// Attempt to load. Might not work out if e.g. for a single marker, pattern hasn't been
-		// assigned yet, or for an NFT marker, dataset hasn't been specified.
 		if (m.UID == ARMarker.NO_ID) {
 			m.Load();
 		}
 
 		Matrix4x4 pose = to.gameObject.transform.localToWorldMatrix;
-		//ARController.Log("pose=" + pose.ToString("F3"));
-
         switch (m.MarkerType) {
 
             case MarkerType.Square:
@@ -97,14 +53,10 @@ class ARTrackedObjectGizmo
 		Vector3 right = mat.GetColumn(0);
 		Vector3 up = mat.GetColumn(1);
 
-        //float d = selected ? 1.0f : 0.0f;
-     
-		DrawRectangle(origin, up, right, pattWidth * 0.5f, pattWidth * 0.5f, selected ? MarkerBorderSelected : MarkerBorderUnselected); // Inside border.
-		DrawRectangle(origin, up, right, pattWidth, pattWidth, selected ? MarkerBorderSelected : MarkerBorderUnselected); // Edge.
-		DrawRectangle(origin, up, right, pattWidth * 1.05f, pattWidth * 1.05f, selected ? MarkerEdgeSelected : MarkerEdgeUnselected); // Highlighting.
+		DrawRectangle(origin, up, right, pattWidth * 0.5f, pattWidth * 0.5f, selected ? MarkerBorderSelected : MarkerBorderUnselected);   
+		DrawRectangle(origin, up, right, pattWidth, pattWidth, selected ? MarkerBorderSelected : MarkerBorderUnselected);  
+		DrawRectangle(origin, up, right, pattWidth * 1.05f, pattWidth * 1.05f, selected ? MarkerEdgeSelected : MarkerEdgeUnselected);  
 
-        //Gizmos.DrawGUITexture(new Rect(origin.x, origin.y, 20, 20), m.MarkerImage);
-		
 		float wordUnitSize = pattWidth * 0.02f;
 		DrawWord(m.Tag, wordUnitSize, origin - up * (pattWidth * 0.6f + (wordUnitSize * 4)) - right * (pattWidth * 0.525f), up, right * 0.5f);
     }
@@ -117,28 +69,24 @@ class ARTrackedObjectGizmo
 
             float pattWidth = m.Patterns[i].width;
 
-            //float d = selected ? 1.0f : 0.0f;
-
 			Vector3 origin = mat1.GetColumn(3);
 			Vector3 right = mat1.GetColumn(0);
 			Vector3 up = mat1.GetColumn(1);
 
-			DrawRectangle(origin, up, right, pattWidth * 0.5f, pattWidth * 0.5f, selected ? MarkerBorderSelected : MarkerBorderUnselected); // Inside border.
-			DrawRectangle(origin, up, right, pattWidth, pattWidth, selected ? MarkerBorderSelected : MarkerBorderUnselected); // Edge.
-			DrawRectangle(origin, up, right, pattWidth * 1.05f, pattWidth * 1.05f, selected ? MarkerEdgeSelected : MarkerEdgeUnselected); // Highlighting.
+			DrawRectangle(origin, up, right, pattWidth * 0.5f, pattWidth * 0.5f, selected ? MarkerBorderSelected : MarkerBorderUnselected);   
+			DrawRectangle(origin, up, right, pattWidth, pattWidth, selected ? MarkerBorderSelected : MarkerBorderUnselected);  
+			DrawRectangle(origin, up, right, pattWidth * 1.05f, pattWidth * 1.05f, selected ? MarkerEdgeSelected : MarkerEdgeUnselected);  
 
 			float wordUnitSize = pattWidth * 0.02f;
 			DrawWord(m.Tag + "(" + i + ")", wordUnitSize, origin - up * (pattWidth * 0.6f + (wordUnitSize * 4)) - right * (pattWidth * 0.525f), up, right * 0.5f);
 		}
                
-        //Gizmos.DrawGUITexture(new Rect(origin.x, origin.y, 20, 20), m.MarkerImage);
     }
 
 	private static void DrawNFTMarker(ARMarker m, Matrix4x4 mat, bool selected) 
     {
         float pattWidth = m.NFTWidth;
 		float pattHeight = m.NFTHeight;
-		//Debug.Log("DrawNFTMarker got pattWidth=" + pattWidth + ", pattHeight=" + pattHeight + ".");
 		if (pattWidth > 0.0f && pattHeight > 0.0f) {
 
 			float biggestSide = Math.Max(pattWidth, pattHeight);
@@ -147,13 +95,9 @@ class ARTrackedObjectGizmo
 			Vector3 up = mat.GetColumn(1);
 			Vector3 centre = origin + right*0.5f*pattWidth + up*0.5f*pattHeight;
 
-        	//float d = selected ? 1.0f : 0.0f;
-     
 			DrawRectangle(centre, up, right, pattWidth, pattHeight, selected ? MarkerBorderSelected : MarkerBorderUnselected);
 			DrawRectangle(centre, up, right, pattWidth + biggestSide*0.05f, pattHeight + biggestSide*0.05f, selected ? MarkerEdgeSelected : MarkerEdgeUnselected);
 
-        	//Gizmos.DrawGUITexture(new Rect(centre.x, centre.y, 20, 20), m.MarkerImage);
-		
 			float wordUnitSize = pattHeight * 0.02f;
 			DrawWord(m.Tag, wordUnitSize, centre - up*(pattHeight*0.6f + (wordUnitSize*4)) - right*pattWidth*0.525f, up, right*0.5f);
 		}
@@ -164,7 +108,6 @@ class ARTrackedObjectGizmo
 
         Gizmos.color = color;
 
-		//ARController.Log("DrawRectangle centre=" + centre.ToString("F3") + ", up=" + up.ToString("F3") + ", right=" + right.ToString("F3") + ", width=" + width.ToString("F3") + ", height=" + height.ToString("F3") + ".");
 		Vector3 u = up * height;
         Vector3 r = right * width;
         Vector3 p = centre - (u * 0.5f) - (r * 0.5f);
