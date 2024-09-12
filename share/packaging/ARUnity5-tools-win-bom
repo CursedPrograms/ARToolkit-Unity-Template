@@ -1,0 +1,283 @@
+CHANGELOG.txt
+LICENSE.txt
+README.md
+
+./bin/ARvideo.dll
+./bin/DSVL.dll
+./bin/calib_camera.exe
+./bin/calib_optical.exe
+./bin/calib_stereo.exe
+./bin/checkResolution.exe
+./bin/check_id.exe
+./bin/dispFeatureSet.exe
+./bin/dispImageSet.exe
+./bin/genMarkerSet.exe
+./bin/genTexData.exe
+./bin/glut32.dll
+./bin/mk_patt
+./bin/mk_patt.exe
+./bin/opencv_calib3d2410.dll
+./bin/opencv_core2410.dll
+./bin/opencv_features2d2410.dll
+./bin/opencv_flann2410.dll
+./bin/opencv_imgproc2410.dll
+./bin/pthreadVC2.dll
+
+./bin/Data/camera_para.dat
+
+./doc/README (ARToolKit5-5.2-utils).txt
+
+./doc/Marker images/Harlech_Castle_plan_colour.jpg
+./doc/Marker images/gibraltar.jpg
+
+./doc/patterns/Blank pattern.png
+./doc/patterns/Calibration chessboard (A4).pdf
+./doc/patterns/Calibration chessboard (US Letter).pdf
+./doc/patterns/Hiro pattern.pdf
+./doc/patterns/Kanji pattern.pdf
+./doc/patterns/Matrix code 3x3
+./doc/patterns/Matrix code 3x3 (72dpi)
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)
+./doc/patterns/Matrix code 3x3 with parity
+./doc/patterns/Matrix code 3x3 with parity (72dpi)
+./doc/patterns/Multi pattern 4x3 (A4).pdf
+./doc/patterns/Multi pattern 4x3 (Letter).pdf
+./doc/patterns/Multi pattern 8x6 (A4).pdf
+./doc/patterns/Multi pattern 8x6 (Letter).pdf
+
+./doc/patterns/Matrix code 3x3/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3/0.png
+./doc/patterns/Matrix code 3x3/1.png
+./doc/patterns/Matrix code 3x3/10.png
+./doc/patterns/Matrix code 3x3/11.png
+./doc/patterns/Matrix code 3x3/12.png
+./doc/patterns/Matrix code 3x3/13.png
+./doc/patterns/Matrix code 3x3/14.png
+./doc/patterns/Matrix code 3x3/15.png
+./doc/patterns/Matrix code 3x3/16.png
+./doc/patterns/Matrix code 3x3/17.png
+./doc/patterns/Matrix code 3x3/18.png
+./doc/patterns/Matrix code 3x3/19.png
+./doc/patterns/Matrix code 3x3/2.png
+./doc/patterns/Matrix code 3x3/20.png
+./doc/patterns/Matrix code 3x3/21.png
+./doc/patterns/Matrix code 3x3/22.png
+./doc/patterns/Matrix code 3x3/23.png
+./doc/patterns/Matrix code 3x3/24.png
+./doc/patterns/Matrix code 3x3/25.png
+./doc/patterns/Matrix code 3x3/26.png
+./doc/patterns/Matrix code 3x3/27.png
+./doc/patterns/Matrix code 3x3/28.png
+./doc/patterns/Matrix code 3x3/29.png
+./doc/patterns/Matrix code 3x3/3.png
+./doc/patterns/Matrix code 3x3/30.png
+./doc/patterns/Matrix code 3x3/31.png
+./doc/patterns/Matrix code 3x3/32.png
+./doc/patterns/Matrix code 3x3/33.png
+./doc/patterns/Matrix code 3x3/34.png
+./doc/patterns/Matrix code 3x3/35.png
+./doc/patterns/Matrix code 3x3/36.png
+./doc/patterns/Matrix code 3x3/37.png
+./doc/patterns/Matrix code 3x3/38.png
+./doc/patterns/Matrix code 3x3/39.png
+./doc/patterns/Matrix code 3x3/4.png
+./doc/patterns/Matrix code 3x3/40.png
+./doc/patterns/Matrix code 3x3/41.png
+./doc/patterns/Matrix code 3x3/42.png
+./doc/patterns/Matrix code 3x3/43.png
+./doc/patterns/Matrix code 3x3/44.png
+./doc/patterns/Matrix code 3x3/45.png
+./doc/patterns/Matrix code 3x3/46.png
+./doc/patterns/Matrix code 3x3/47.png
+./doc/patterns/Matrix code 3x3/48.png
+./doc/patterns/Matrix code 3x3/49.png
+./doc/patterns/Matrix code 3x3/5.png
+./doc/patterns/Matrix code 3x3/50.png
+./doc/patterns/Matrix code 3x3/51.png
+./doc/patterns/Matrix code 3x3/52.png
+./doc/patterns/Matrix code 3x3/53.png
+./doc/patterns/Matrix code 3x3/54.png
+./doc/patterns/Matrix code 3x3/55.png
+./doc/patterns/Matrix code 3x3/56.png
+./doc/patterns/Matrix code 3x3/57.png
+./doc/patterns/Matrix code 3x3/58.png
+./doc/patterns/Matrix code 3x3/59.png
+./doc/patterns/Matrix code 3x3/6.png
+./doc/patterns/Matrix code 3x3/60.png
+./doc/patterns/Matrix code 3x3/61.png
+./doc/patterns/Matrix code 3x3/62.png
+./doc/patterns/Matrix code 3x3/63.png
+./doc/patterns/Matrix code 3x3/7.png
+./doc/patterns/Matrix code 3x3/8.png
+./doc/patterns/Matrix code 3x3/9.png
+
+./doc/patterns/Matrix code 3x3 (72dpi)/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3 (72dpi)/0.png
+./doc/patterns/Matrix code 3x3 (72dpi)/1.png
+./doc/patterns/Matrix code 3x3 (72dpi)/10.png
+./doc/patterns/Matrix code 3x3 (72dpi)/11.png
+./doc/patterns/Matrix code 3x3 (72dpi)/12.png
+./doc/patterns/Matrix code 3x3 (72dpi)/13.png
+./doc/patterns/Matrix code 3x3 (72dpi)/14.png
+./doc/patterns/Matrix code 3x3 (72dpi)/15.png
+./doc/patterns/Matrix code 3x3 (72dpi)/16.png
+./doc/patterns/Matrix code 3x3 (72dpi)/17.png
+./doc/patterns/Matrix code 3x3 (72dpi)/18.png
+./doc/patterns/Matrix code 3x3 (72dpi)/19.png
+./doc/patterns/Matrix code 3x3 (72dpi)/2.png
+./doc/patterns/Matrix code 3x3 (72dpi)/20.png
+./doc/patterns/Matrix code 3x3 (72dpi)/21.png
+./doc/patterns/Matrix code 3x3 (72dpi)/22.png
+./doc/patterns/Matrix code 3x3 (72dpi)/23.png
+./doc/patterns/Matrix code 3x3 (72dpi)/24.png
+./doc/patterns/Matrix code 3x3 (72dpi)/25.png
+./doc/patterns/Matrix code 3x3 (72dpi)/26.png
+./doc/patterns/Matrix code 3x3 (72dpi)/27.png
+./doc/patterns/Matrix code 3x3 (72dpi)/28.png
+./doc/patterns/Matrix code 3x3 (72dpi)/29.png
+./doc/patterns/Matrix code 3x3 (72dpi)/3.png
+./doc/patterns/Matrix code 3x3 (72dpi)/30.png
+./doc/patterns/Matrix code 3x3 (72dpi)/31.png
+./doc/patterns/Matrix code 3x3 (72dpi)/32.png
+./doc/patterns/Matrix code 3x3 (72dpi)/33.png
+./doc/patterns/Matrix code 3x3 (72dpi)/34.png
+./doc/patterns/Matrix code 3x3 (72dpi)/35.png
+./doc/patterns/Matrix code 3x3 (72dpi)/36.png
+./doc/patterns/Matrix code 3x3 (72dpi)/37.png
+./doc/patterns/Matrix code 3x3 (72dpi)/38.png
+./doc/patterns/Matrix code 3x3 (72dpi)/39.png
+./doc/patterns/Matrix code 3x3 (72dpi)/4.png
+./doc/patterns/Matrix code 3x3 (72dpi)/40.png
+./doc/patterns/Matrix code 3x3 (72dpi)/41.png
+./doc/patterns/Matrix code 3x3 (72dpi)/42.png
+./doc/patterns/Matrix code 3x3 (72dpi)/43.png
+./doc/patterns/Matrix code 3x3 (72dpi)/44.png
+./doc/patterns/Matrix code 3x3 (72dpi)/45.png
+./doc/patterns/Matrix code 3x3 (72dpi)/46.png
+./doc/patterns/Matrix code 3x3 (72dpi)/47.png
+./doc/patterns/Matrix code 3x3 (72dpi)/48.png
+./doc/patterns/Matrix code 3x3 (72dpi)/49.png
+./doc/patterns/Matrix code 3x3 (72dpi)/5.png
+./doc/patterns/Matrix code 3x3 (72dpi)/50.png
+./doc/patterns/Matrix code 3x3 (72dpi)/51.png
+./doc/patterns/Matrix code 3x3 (72dpi)/52.png
+./doc/patterns/Matrix code 3x3 (72dpi)/53.png
+./doc/patterns/Matrix code 3x3 (72dpi)/54.png
+./doc/patterns/Matrix code 3x3 (72dpi)/55.png
+./doc/patterns/Matrix code 3x3 (72dpi)/56.png
+./doc/patterns/Matrix code 3x3 (72dpi)/57.png
+./doc/patterns/Matrix code 3x3 (72dpi)/58.png
+./doc/patterns/Matrix code 3x3 (72dpi)/59.png
+./doc/patterns/Matrix code 3x3 (72dpi)/6.png
+./doc/patterns/Matrix code 3x3 (72dpi)/60.png
+./doc/patterns/Matrix code 3x3 (72dpi)/61.png
+./doc/patterns/Matrix code 3x3 (72dpi)/62.png
+./doc/patterns/Matrix code 3x3 (72dpi)/63.png
+./doc/patterns/Matrix code 3x3 (72dpi)/7.png
+./doc/patterns/Matrix code 3x3 (72dpi)/8.png
+./doc/patterns/Matrix code 3x3 (72dpi)/9.png
+
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/0.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/1.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/2.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/3.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/4.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/5.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/6.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code/7.png
+
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/0.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/1.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/2.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/3.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/4.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/5.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/6.png
+./doc/patterns/Matrix code 3x3 with Hamming (6,3) code (72dpi)/7.png
+
+./doc/patterns/Matrix code 3x3 with parity/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3 with parity/0.png
+./doc/patterns/Matrix code 3x3 with parity/1.png
+./doc/patterns/Matrix code 3x3 with parity/10.png
+./doc/patterns/Matrix code 3x3 with parity/11.png
+./doc/patterns/Matrix code 3x3 with parity/12.png
+./doc/patterns/Matrix code 3x3 with parity/13.png
+./doc/patterns/Matrix code 3x3 with parity/14.png
+./doc/patterns/Matrix code 3x3 with parity/15.png
+./doc/patterns/Matrix code 3x3 with parity/16.png
+./doc/patterns/Matrix code 3x3 with parity/17.png
+./doc/patterns/Matrix code 3x3 with parity/18.png
+./doc/patterns/Matrix code 3x3 with parity/19.png
+./doc/patterns/Matrix code 3x3 with parity/2.png
+./doc/patterns/Matrix code 3x3 with parity/20.png
+./doc/patterns/Matrix code 3x3 with parity/21.png
+./doc/patterns/Matrix code 3x3 with parity/22.png
+./doc/patterns/Matrix code 3x3 with parity/23.png
+./doc/patterns/Matrix code 3x3 with parity/24.png
+./doc/patterns/Matrix code 3x3 with parity/25.png
+./doc/patterns/Matrix code 3x3 with parity/26.png
+./doc/patterns/Matrix code 3x3 with parity/27.png
+./doc/patterns/Matrix code 3x3 with parity/28.png
+./doc/patterns/Matrix code 3x3 with parity/29.png
+./doc/patterns/Matrix code 3x3 with parity/3.png
+./doc/patterns/Matrix code 3x3 with parity/30.png
+./doc/patterns/Matrix code 3x3 with parity/31.png
+./doc/patterns/Matrix code 3x3 with parity/4.png
+./doc/patterns/Matrix code 3x3 with parity/5.png
+./doc/patterns/Matrix code 3x3 with parity/6.png
+./doc/patterns/Matrix code 3x3 with parity/7.png
+./doc/patterns/Matrix code 3x3 with parity/8.png
+./doc/patterns/Matrix code 3x3 with parity/9.png
+
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/ How to use these markers.txt
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/0.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/1.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/10.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/11.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/12.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/13.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/14.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/15.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/16.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/17.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/18.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/19.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/2.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/20.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/21.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/22.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/23.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/24.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/25.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/26.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/27.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/28.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/29.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/3.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/30.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/31.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/4.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/5.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/6.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/7.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/8.png
+./doc/patterns/Matrix code 3x3 with parity (72dpi)/9.png
+
+./redist/vcredist_x64.exe
+./redist/vcredist_x86.exe
+
+./src/Android_Unity_Player_Source/libs/BT200Ctrl.jar
+
+./src/Android_Unity_Player_Source/res/values/strings.xml
+
+./src/Android_Unity_Player_Source/res/xml/preferences.xml
+
+./src/Android_Unity_Player_Source/src/org/artoolkit/ar/base/NativeInterface.java
+
+./src/Android_Unity_Player_Source/src/org/artoolkit/ar/base/camera/CameraPreferencesActivity.java
+
+./src/Android_Unity_Player_Source/src/org/artoolkit/ar/unity/CameraSurface.java
+./src/Android_Unity_Player_Source/src/org/artoolkit/ar/unity/UnityARPlayerActivity.java
