@@ -8,6 +8,10 @@
 
 # ARToolkit
 
+Disclaimer:
+
+This project is focused solely on the preservation of software and the potential updates for modern systems. We would like to clarify that Cursed Entertainment, its CEO, or any of its subsidiaries are not affiliated with the original ARToolkit developers. Our intention is to continue the valuable work initiated by the original developers and to contribute to the ongoing relevance and usability of ARToolkit.
+
 <a href="https://cursed-entertainment.itch.io/" target="_blank">
     <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png"
         alt="CursedEntertainment Logo">
