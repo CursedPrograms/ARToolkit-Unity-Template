@@ -8,6 +8,7 @@
 
 # ARToolkit
 
+android-studio-3-2-1-0
 https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 https://github.com/android/ndk/wiki/Unsupported-Downloads#ndk-13b-downloads
 
