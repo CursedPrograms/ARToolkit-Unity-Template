@@ -6,7 +6,7 @@
 </div>
 <br>
 
-# ARToolkit
+# ARToolkit-Unity-Template
 
 - **Android Studio**: [Download Android Studio 3.2.1.0](https://developer.android.com/studio/archive)
 - **Java SE 8 Archive**: [Java SE 8 Archive Downloads](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
