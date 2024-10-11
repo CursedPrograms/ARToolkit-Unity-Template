@@ -12,6 +12,8 @@
 - **Java SE 8 Archive**: [Java SE 8 Archive Downloads](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
 - **NDK Downloads**: [NDK 13b Downloads](https://github.com/android/ndk/wiki/Unsupported-Downloads#ndk-13b-downloads)
 
+- https://github.com/CursedPrograms/ar.js
+
 ## Disclaimer
 
 This project is focused solely on the preservation of software and the potential updates for modern systems. We would like to clarify that Cursed Entertainment, its CEO, or any of its subsidiaries are not affiliated with the original ARToolkit developers. Our intention is to continue the valuable work initiated by the original developers and to contribute to the ongoing relevance and usability of ARToolkit.
