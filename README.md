@@ -10,18 +10,21 @@
 
 <br>
 
-https://github.com/CursedPrograms/Augmented-Reality-Resources
-
-<br>
-
 - **Android Studio**: [Download Android Studio 3.2.1.0](https://developer.android.com/studio/archive)
 - **Java SE 8 Archive**: [Java SE 8 Archive Downloads](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html) (JDK 1.8)
 - **NDK Downloads**: [NDK 13b Downloads](https://github.com/android/ndk/wiki/Unsupported-Downloads#ndk-13b-downloads) (NDK 13b)
 
-# ar.js
+<br>
 
-- https://github.com/CursedPrograms/ar.js
-- https://augmented-reality-js.netlify.app/
+## ar.js
+
+- GitHub Repository: [ar.js](https://github.com/CursedPrograms/ar.js)
+- Live Demo: [Augmented Reality JS](https://augmented-reality-js.netlify.app/)
+
+## Additional Resources
+
+Explore more augmented reality resources here:  
+[Augmented Reality Resources](https://github.com/CursedPrograms/Augmented-Reality-Resources)
 
 ## Disclaimer
 
